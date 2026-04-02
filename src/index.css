@@ -1,0 +1,90 @@
+/* Font Family Import */
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
+
+/* Global Style */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  font-family: "Source Sans 3", sans-serif;
+  margin: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #e0e0e0;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-track:hover {
+  background: #555;
+}
+
+/* .css-6q2ock {
+  width: 300px !important;
+  min-width: 300px !important;
+} */
+
+.css-1cmq8kc {
+  max-width: 100%;
+  width: calc(100% - 250px) !important;
+}
+
+.ps-menu-button:hover {
+  background-color: rgba(255, 255, 255, 0.05) !important;
+}
+
+/* =========================
+   PRINT SETTINGS
+========================= */
+
+/* Hide on screen */
+.print-header,
+.print-footer {
+  display: none;
+}
+
+.ps-menu-root .css-ewdv3l .css-bd5tha>.ps-menu-button,
+.css-1p4zzyk>.ps-menu-button {
+  height: auto !important;
+}
+
+@media print {
+
+  /* Show only in print */
+  .print-header {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+
+  .print-footer {
+    display: block;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  /* Hide filters & buttons */
+  .MuiFormControl-root,
+  .MuiDataGrid-toolbarContainer {
+    display: none !important;
+  }
+
+  /* Ensure summary always prints */
+  .summary-section {
+    page-break-inside: avoid;
+  }
+}
