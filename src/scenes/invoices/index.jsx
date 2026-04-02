@@ -347,7 +347,7 @@ const Invoices = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.greenAccent[700],
+            backgroundColor: colors.greenAccent[700],  color: "#fff",
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {

@@ -166,7 +166,7 @@ const NgoSpocList = () => {
           "& .MuiDataGrid-root": { border: "none" },
           "& .MuiDataGrid-cell": { border: "none" },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.greenAccent[700],
+            backgroundColor: colors.greenAccent[700],color: "#fff",
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {

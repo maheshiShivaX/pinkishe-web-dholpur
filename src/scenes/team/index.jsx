@@ -214,11 +214,11 @@ const Team = () => {
             color: colors.greenAccent[300],
           },
           "& .MuiDataGrid-columnHeaders": {
-            backgroundColor: colors.greenAccent[700],
+            backgroundColor: colors.greenAccent[700],  color: "#fff",
             borderBottom: "none",
           },
           "& .MuiDataGrid-virtualScroller": {
-            backgroundColor: colors.primary[400],
+            backgroundColor: colors.primary[400]
           },
           "& .MuiDataGrid-footerContainer": {
             borderTop: "none",
@@ -228,7 +228,7 @@ const Team = () => {
             color: `${colors.greenAccent[200]} !important`,
           },
           "& .MuiDataGrid-iconSeparator": {
-            color: colors.primary[100],
+            color: colors.primary[100]
           },
           "& .MuiDataGrid-toolbarContainer button": { color: colors.greenAccent[100] },
         }}
