@@ -100,7 +100,7 @@ const SideBar = () => {
           menuItemStyles={{
             button: {
               ":hover": {
-                color: "#a6a8ff",
+                color: colors.greenAccent[500],
                 background: "transparent",
                 transition: ".4s ease",
               },
@@ -110,7 +110,7 @@ const SideBar = () => {
           <Item
             title="Dashboard"
             path="/"
-            colors={colors}
+            colors={colors.redAccent[500]}
             icon={<DashboardOutlined />}
           />
         </Menu>
@@ -125,7 +125,7 @@ const SideBar = () => {
           menuItemStyles={{
             button: {
               ":hover": {
-                color: "#a6a8ff",
+                color: colors.greenAccent[500],
                 background: "transparent",
                 transition: ".4s ease",
               },
@@ -166,7 +166,7 @@ const SideBar = () => {
           menuItemStyles={{
             button: {
               ":hover": {
-                color: "#a6a8ff",
+                color: colors.greenAccent[500],
                 background: "transparent",
                 transition: ".4s ease",
               },
@@ -420,7 +420,7 @@ const SideBar = () => {
               menuItemStyles={{
                 button: {
                   ":hover": {
-                    color: "#a6a8ff",
+                    color: colors.greenAccent[500],
                     background: "transparent",
                     transition: ".4s ease",
                   },
@@ -479,7 +479,7 @@ const SideBar = () => {
               menuItemStyles={{
                 button: {
                   ":hover": {
-                    color: "#a6a8ff",
+                    color: colors.greenAccent[500],
                     background: "transparent",
                     transition: ".4s ease",
                   },
