@@ -392,7 +392,7 @@ const AllocationForm = () => {
               border: "none",
             },
             "& .MuiDataGrid-columnHeaders": {
-              backgroundColor: colors.greenAccent[700],
+              backgroundColor: colors.greenAccent[700],  color: "#fff",
               borderBottom: "none",
             },
             "& .MuiDataGrid-virtualScroller": {
