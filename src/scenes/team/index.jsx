@@ -208,6 +208,7 @@ const Team = () => {
           },
           "& .MuiDataGrid-cell": {
             border: "none",
+
           },
           "& .name-column--cell": {
             color: colors.greenAccent[300],
@@ -229,6 +230,7 @@ const Team = () => {
           "& .MuiDataGrid-iconSeparator": {
             color: colors.primary[100],
           },
+          "& .MuiDataGrid-toolbarContainer button": { color: colors.greenAccent[100] },
         }}
       >
         <DataGrid

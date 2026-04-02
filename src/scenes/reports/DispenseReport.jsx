@@ -73,6 +73,8 @@ const DispenseReport = () => {
     const role = localStorage.getItem("userRole");
     const navigate = useNavigate();
 
+    
+
     const {
         dispenseReport: { data = [], summary = null } = {},
         dispenseReportLoading,
@@ -233,9 +235,9 @@ const DispenseReport = () => {
     };
 
     const inputSx = {
-        "& .MuiInputBase-input": { color: "#fff" },
+        "& .MuiInputBase-input": { color: colors.greenAccent[100] },
 
-        "& .MuiInputLabel-root": { color: "#bbb" },
+        "& .MuiInputLabel-root": { color: colors.greenAccent[100] },
         "& .MuiInputLabel-root.Mui-focused": {
             color: colors.greenAccent[400],
         },
@@ -251,15 +253,20 @@ const DispenseReport = () => {
                 borderColor: colors.greenAccent[400],
                 borderWidth: "2px",
             },
+            "& .MuiSvgIcon-root": { color: colors.greenAccent[100] },
+
         },
 
         "& .MuiSvgIcon-root": { color: "#fff" },
 
         "& input::-webkit-calendar-picker-indicator": {
-            filter: "invert(1)",
+            filter: theme.palette.mode === 'dark' ? 'invert(1)' : 'invert(0)'
+
         },
     };
 
+
+ 
     const allColumns = [
         { field: "level", headerName: "Level", flex: 1 },
         { field: "days", headerName: "Days", flex: 0.5 },
@@ -533,7 +540,7 @@ const DispenseReport = () => {
                                         <FormControlLabel
                                             key={key}
                                             label={allColumns.find((c) => c.field === key)?.headerName}
-                                            sx={{ color: "#fff" }}
+                                            sx={{ color: colors.greenAccent[100] }}
                                             control={
                                                 <Checkbox
                                                     checked={values.includeColumns[key]}
@@ -584,8 +591,8 @@ const DispenseReport = () => {
                                             "& .MuiDataGrid-columnHeaders": { backgroundColor: colors.greenAccent[700], color: "#fff" },
                                             "& .MuiDataGrid-virtualScroller": { backgroundColor: colors.primary[400] },
                                             "& .MuiDataGrid-toolbarContainer": { color: "#fff" },
-                                            "& .MuiDataGrid-toolbarContainer button": { color: "#fff !important" },
-                                            "& .MuiDataGrid-toolbarContainer svg": { color: "#fff !important" },
+                                            "& .MuiDataGrid-toolbarContainer button": { color: colors.greenAccent[100] },
+                                            "& .MuiDataGrid-toolbarContainer svg": { color: colors.greenAccent[100] },
                                             "& .MuiPaper-root": { backgroundColor: colors.primary[500], color: "#fff" },
                                         }}
                                     />

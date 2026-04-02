@@ -112,7 +112,7 @@ const LastActivityReport = () => {
                                 color: "#fff",
                             },
                             "& .MuiDataGrid-toolbarContainer button": {
-                                color: "#fff !important",
+                                color: { color: colors.greenAccent[100]}
                             },
                         }}
                     />
